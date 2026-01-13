@@ -20,8 +20,9 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('my_render/',views.my_render,name='my_render'),
-    path('my_redirect/',views.my_redirect,name='my_redirect'),
     path('redirect1/<int:x>/',views.redirect1,name='redirect1'),
+    path('my_redirect/',views.my_redirect,name='my_redirect'),
+    
 ]
     
 
